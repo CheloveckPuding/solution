@@ -8,7 +8,7 @@ def main(s):
     h3 = 0b111 & (i >> 18)
     return tuple(map(str, (h1, h2, h3,)))
 
-//5
+#5
 import math
 
 
@@ -23,7 +23,7 @@ def main(y, z):
         sum += 96 * (a + b) ** 2
     return 86 * sum
 
-//6
+#6
 def main(x):
     match x[1]:
         case "SMALI":
@@ -86,6 +86,8 @@ def x22(x):
             return 9
         case 1977:
             return 10
+
+#7
 def main(number):
     n = int(number, 16)
     return [
@@ -95,7 +97,7 @@ def main(number):
     ]
 
 
-//10
+#10
 from enum import Enum, auto
 
 
