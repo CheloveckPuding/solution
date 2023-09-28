@@ -1,6 +1,83 @@
 
 ```python
+//5
+import math
 
+
+def main(y, z):
+    sum = 0
+    n = len(y)
+    y = [0] + y
+    z = [0] + z
+    for i in range(1, n + 1):
+        a = (y[n + 1 - i] ** 3)
+        b = (-18 * z[n + 1 - math.ceil(i / 2)] - 71)
+        sum += 96 * (a + b) ** 2
+    return 86 * sum
+
+//6
+def main(x):
+    match x[1]:
+        case "SMALI":
+            match x[0]:
+                case 2018:
+                    match x[4]:
+                        case "UNO":
+                            return x21(x)
+                        case default:
+                            return x41(x)
+                case default:
+                    return x01(x)
+        case "VOLT":
+            return x42(x)
+        case "XML":
+            return 12
+
+
+def x01(x):
+    match x[0]:
+        case 2020:
+            return 5
+        case 1999:
+            return 6
+
+
+def x21(x):
+    match x[2]:
+        case 2013:
+            return 0
+        case 2017:
+            return 1
+        case 1997:
+            return 2
+
+
+def x41(x):
+    match x[4]:
+        case "PAWN":
+            return 3
+        case "NINJA":
+            return 4
+
+
+def x42(x):
+    match x[4]:
+        case "UNO":
+            return 7
+        case "PAWN":
+            return x22(x)
+        case "NINJA":
+            return 11
+
+
+def x22(x):
+    match x[2]:
+        case 2013:
+            return 8
+        case 2017:
+            return 9
+        case 1977:
+            return 10
 def main(number):
     n = int(number, 16)
     return [
@@ -10,7 +87,7 @@ def main(number):
     ]
 
 
-
+//10
 from enum import Enum, auto
 
 
