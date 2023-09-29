@@ -1,5 +1,12 @@
 
 ```python
+#7
+def main(s):
+    i = int(s)
+    h1 = 0b111111111 & i
+    h2 = 0b1111111111 & (i >> 9)
+    h3 = 0b111 & (i >> 18)
+    return tuple(map(str, (h1, h2, h3,)))
 
 #5
 import math
